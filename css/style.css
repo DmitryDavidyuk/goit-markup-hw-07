@@ -1,10 +1,4 @@
-/* :root {
-  --prymary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --prymary-white-color: #000000;
-  --second-colr-text: #ffffff;
-}
+
 p,
 h1,
 h2,
@@ -65,115 +59,7 @@ body {
   padding-top: 0;
 }
 /* ------------------шапка сайта------------------ */
-.header-container {
-  display: flex;
-  align-items: center;
-  padding: 25px;
-}
 
-.header {
-  margin: 0;
-  border-bottom: 1px solid #ececec;
-}
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-.header-list {
-  display: flex;
-  margin-left: auto;
-}
-.header-logo {
-  margin-right: 93px;
-}
-
-.header-item:not(:last-child),
-.header-mail {
-  margin-right: 50px;
-}
-
-.header-logo,
-.footer-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700px;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-.footer-logo {
-  color: var(--second-colr-text);
-}
-.logo-title {
-  color: var(--accent-color);
-}
-
-.header-link,
-.header-mail,
-.header-tel {
-  font-weight: 500px;
-  display: flex;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.header-link.active::after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  position: absolute;
-  bottom: -33px;
-  left: 0;
-  border-radius: 2px;
-}
-
-.icon-mail,
-.icon-tell {
-  fill: var(--prymary-text-color);
-  margin-right: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.active {
-  color: var(--accent-color);
-}
-
-.header-link:hover,
-.header-mail:hover .icon-mail,
-.header-mail:hover,
-.header-tel:hover .icon-tell,
-.header-tel:hover,
-.footer-mail:hover,
-.footer-tel:hover,
-.icon-mail:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-  transition-property: color fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:focus,
-.header-mail:focus,
-.header-tel:focus,
-.footer-mail:focus,
-.footer-tel:focus {
-  color: var(--accent-color);
-}
-
-.header-tel,
-.header-mail {
-  color: var(--prymary-text-color);
-}
 
 /* ------------------------preview----------------------------------*/
 .preview {
@@ -858,4 +744,4 @@ address {
 
 .send-icon {
   margin-left: 10px;
-} */
+}
