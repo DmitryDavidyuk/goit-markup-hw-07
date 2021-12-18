@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-.hero-text {
+.hero--text {
   margin: 0 auto;
   max-width: 700px;
   font-weight: 900px;
@@ -19,24 +19,11 @@
   color: var(--second-colr-text);
 }
 
-.hero-btn {
-  display: block;
+.hero--button {
   margin: 30px auto;
-  height: 50px;
-  min-width: 200px;
-
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-colr-text);
-  background-color: var(--accent-color);
-  border: none;
 }
 
-.preview-btn:hover,
+
 .filtr-btn:hover,
 .online-btn:hover {
   background-color: #118ce8;
