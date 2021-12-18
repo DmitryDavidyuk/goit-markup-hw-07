@@ -1,4 +1,4 @@
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   padding: 25px;
@@ -8,25 +8,36 @@
   margin: 0;
   border-bottom: 1px solid #ececec;
 }
+
 .menu {
   display: flex;
   align-items: center;
 }
-.header-list {
+
+.menu__list {
   display: flex;
   margin-left: auto;
+    .active {
+    color: var(--accent-color);
+  }
+  &--tel, &--mail {
+    color: var(--prymary-text-color);
+  }
 }
-.header-logo {
+
+.header--logo {
   margin-right: 93px;
 }
 
-.header-item:not(:last-child),
-.header-mail {
+.menu__list--item:not(:last-child),
+.menu__list--mail {
   margin-right: 50px;
+  
 }
 
-.header-logo,
-.footer-logo {
+
+.header--logo,
+.footer--logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: 700px;
@@ -35,28 +46,25 @@
   letter-spacing: 0.03em;
   color: #000000;
 }
-.footer-logo {
+.footer--logo {
   color: var(--second-colr-text);
 }
 .logo-title {
   color: var(--accent-color);
 }
 
-.header-link,
-.header-mail,
-.header-tel {
-  font-weight: 500px;
+.menu__list--link,
+.menu__list--mail,
+.menu__list--tel {
   display: flex;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500px, 14px, 1.14, 0.02em);
   color: var(--title-text-color);
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.header-link.active::after {
+.menu__list--link.active::after {
   display: block;
   content: '';
   width: 100%;
@@ -68,26 +76,22 @@
   border-radius: 2px;
 }
 
-.icon-mail,
-.icon-tell {
+.menu__icon--mail,
+.menu__icon--tel {
   fill: var(--prymary-text-color);
   margin-right: 10px;
   justify-content: center;
   align-items: center;
 }
 
-.active {
-  color: var(--accent-color);
-}
 
-.header-link:hover,
-.header-mail:hover .icon-mail,
-.header-mail:hover,
-.header-tel:hover .icon-tell,
-.header-tel:hover,
-.footer-mail:hover,
-.footer-tel:hover,
-.icon-mail:hover {
+
+.menu__list--link:hover,
+.menu__list--mail:hover .menu__icon--mail,
+.menu__list--mail:hover,
+.menu__list--tel:hover .menu__icon--tel,
+.menu__list--tel:hover,
+.menu__icon--mail:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
   transition-property: color fill;
@@ -95,15 +99,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:focus,
-.header-mail:focus,
-.header-tel:focus,
-.footer-mail:focus,
-.footer-tel:focus {
+.menu__list--link:focus,
+.menu__list--mail:focus,
+.menu__list--tel:focus {
   color: var(--accent-color);
 }
 
-.header-tel,
-.header-mail {
-  color: var(--prymary-text-color);
-}
+

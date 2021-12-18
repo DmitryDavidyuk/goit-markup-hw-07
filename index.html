@@ -18,26 +18,31 @@
 <body>
     <!-- Шапка страницы -->
     <header class="header">
-        <div class="container header-container">           
+        <div class="container header__container">           
             <nav class="menu">
-                <a class="header-logo link" href="/"><span class="logo-title">Web</span>Studio</a>
-                <ul class="list header-list">
-                    <li class="header-item"><a class="link header-link active" href="">Студия</a></li>
-                    <li class="header-item"><a class="link header-link" href="./portfolio/portfolio.html">Портфолио</a></li>
-                    <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+                <a class="header--logo link" href="/"><span class="logo-title">Web</span>Studio</a>
+                <ul class="list menu__list">
+                    <li class="menu__list--item"><a class="link menu__list--link active" href="">Студия</a></li>
+                    <li class="menu__list--item"><a class="link menu__list--link" href="./portfolio/portfolio.html">Портфолио</a></li>
+                    <li class="menu__list--item"><a class="link menu__list--link" href="">Контакты</a></li>
                 </ul>
             </nav>
             
-            <ul class="header-list list">
+            <ul class="menu__list list">
                 <li>
-                    <a class="link header-mail" href="mailto:info@devstudio.com">
-                        <svg class="icon-mail" width="16" height="12">
+                    <a class="link menu__list--mail" href="mailto:info@devstudio.com">
+                        <svg class="menu__icon--mail" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope-hover"></use>
-                        </svg>info@devstudio.com</a></li>
-                    <li>
-                    <a class="link header-tel" href="tel:+380961111111"><svg class="icon-tell" width="10" height="16">
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li>
+                    <a class="link menu__list--tel" href="tel:+380961111111">
+                        <svg class="menu__icon--tel" width="10" height="16">
                         <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>     
     </header>
@@ -310,7 +315,7 @@
         <section class="section footer">
             <div class="container subscribe">
                 <div class="info">
-                    <a class="footer-logo link" href="/"><span class="logo-title">Web</span>Studio</a>
+                    <a class="footer--logo link" href="/"><span class="logo-title">Web</span>Studio</a>
                     <address class="footer-info">г. Киев, пр-т Леси Украинки, 26</address>
                     <ul class="list">
                         <li><a class="link footer-mail" href=",ilto:info@example.com">info@example.com</a></li>
