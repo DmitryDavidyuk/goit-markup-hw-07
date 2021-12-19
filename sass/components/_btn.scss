@@ -1,10 +1,12 @@
 .button {
-  display: block;
+  display: flex;
   height: 50px;
   min-width: 200px;
   border-radius: 4px;
-  @include font(500px, 16px, 1.62, 0.03);
+  @include font(700px, 16px, 1.62, 0.03);
   text-align: center;
+  align-items: center;
+  justify-content: center;
   color: var(--second-colr-text);
   background-color: var(--accent-color);
   border: none;

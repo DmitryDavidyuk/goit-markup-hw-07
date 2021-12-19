@@ -1,4 +1,4 @@
-.benefits-box {
+.benefits__box {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -8,18 +8,29 @@
   border-radius: 4px;
 }
 
-.benefits-icon {
+.benefits__icon {
   margin: auto;
-}
-
-.info-section {
-  display: none;
 }
 
 .benefits {
   display: flex;
 }
 
-.benefits-text:not(:last-child) {
+.benefits__text:not(:last-child) {
   margin-right: 30px;
+}
+
+.benefits__title {
+  @include font(700px, 14px, 1.14, 0.03em);
+  color: var(--title-text-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.benefits__text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-right: 2px;
 }
