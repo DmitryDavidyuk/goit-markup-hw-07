@@ -3,7 +3,7 @@
   height: 50px;
   min-width: 200px;
   border-radius: 4px;
-  @include font(700px, 16px, 1.62, 0.03);
+  @include font(700px, 16px, 1.62, 0.03em);
   text-align: center;
   align-items: center;
   justify-content: center;
