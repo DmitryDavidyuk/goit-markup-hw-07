@@ -1,6 +1,6 @@
 .customers__link {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid;
   border-color: #afb1b8;
@@ -15,17 +15,29 @@
   }
 }
 
-.customers__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
 .customers__icon {
   fill: currentColor;
 }
 
-.customers__list + .customers__list {
-  margin-left: 30px;
+.customers__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: 30px;
+  // justify-content: center;
+  // align-items: center;
+  // margin-top: 50px;
 }
+
+.customers__list {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+
+
+// .customers__list + .customers__list {
+//   margin-left: 30px;
+// }

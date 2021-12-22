@@ -28,6 +28,12 @@ body {
   margin: 0;
 }
 
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
 /* ------------------------класы для сброса---------------------- */
 .list {
   list-style: none;
@@ -51,13 +57,6 @@ body {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .section {
@@ -113,8 +112,6 @@ body {
 }
 
 .title {
-  margin-top: 0;
-  margin-bottom: 50px;
   font-weight: 700px;
   font-size: 36px;
   line-height: 1.16;
@@ -156,6 +153,18 @@ body {
 
 .social__icon {
   fill: currentColor;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .header-container {
@@ -407,7 +416,7 @@ body {
 
 .customers__link {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid;
   border-color: #afb1b8;
@@ -421,19 +430,22 @@ body {
   border-color: var(--accent-color);
 }
 
-.customers__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
 .customers__icon {
   fill: currentColor;
 }
 
-.customers__list + .customers__list {
+.customers__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+
+.customers__list {
+  margin-bottom: 30px;
   margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 
 .footer {
