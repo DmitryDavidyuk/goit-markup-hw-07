@@ -49,8 +49,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        div.menu     
+        </div>  
     </header>
     <!--main content-->
     <main>
@@ -109,13 +108,81 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="galery list">
                     <li class="img-work">
-                        <img src="./images/box/box1.jpg" alt="программируем" width="370">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/box/box1.jpg 1x, 
+                                    ./images/box/box1-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/box/box1-tab.jpg 1x, 
+                                    ./images/box/box1-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/box/box1-mob.jpg 1x, 
+                                    ./images/box/box1-mob-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+                            <img 
+                                src="./images/box/box1.jpg" 
+                                alt="программируем">
+                        </picture>
                         <p class="workspace__title">Десктопные приложения</p>
                     </li>
-                    <li class="img-work"><img src="./images/box/box2.jpg" alt="адаптация" width="370">
+                    <li class="img-work">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/box/box2.jpg 1x, 
+                                    ./images/box/box2-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/box/box2-tab.jpg 1x, 
+                                    ./images/box/box2-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                >
+                                <source
+                                srcset="
+                                    ./images/box/box2-mob.jpg 1x, 
+                                    ./images/box/box2-mob-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+                            <img 
+                                src="./images/box/box2.jpg" 
+                                alt="адаптация">
+                        </picture>
                         <p class="workspace__title">Мобильные приложения</p>
                     </li> 
-                    <li class="img-work"><img src="./images/box/box3.jpg" alt="дизайн" width="370">
+                    <li class="img-work">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/box/box3.jpg 1x, 
+                                    ./images/box/box3-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/box/box3-tab.jpg 1x, 
+                                    ./images/box/box3-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                >
+                                <source
+                                srcset="
+                                    ./images/box/box3-mob.jpg 1x, 
+                                    ./images/box/box3-mob-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+                            <img 
+                                src="./images/box/box3.jpg" 
+                                alt="дизайн">
+                        </picture>
                     <p class="workspace__title">Дизайнерские решения</p>
                 </li>
                 </ul>
@@ -126,7 +193,26 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team list">
                     <li class="card">
-                        <img src="./images/team/team1.jpg" alt="Игорь Демьяненко">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/team1.jpg 1x, 
+                                    ./images/team/team1-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="
+                                    ./images/team/team1-tab.jpg 1x, 
+                                    ./images/team/team1-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source
+                                srcset="
+                                    ./images/team/team1-mob.jpg 1x, 
+                                    ./images/team/team1-mob-2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img 
+                                src="./images/team/team1.jpg" 
+                                alt="Игорь Демьяненко">
+                        </picture>
                         <h3 class="card__title"> Игорь Демьяненко</h3>
                         <p class="card__subtitle">Product Designer</p>
                         <div class="social">
@@ -165,7 +251,27 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./images/team/team2.jpg" alt="Ольга Репина">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/team2.jpg 1x, 
+                                    ./images/team/team2-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="
+                                    ./images/team/team2-tab.jpg 1x, 
+                                    ./images/team/team2-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source
+                                srcset="
+                                    ./images/team/team2-mob.jpg 1x, 
+                                    ./images/team/team2-mob-2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img 
+                            src="./images/team/team2.jpg" 
+                            alt="Ольга Репина">
+                        </picture>
+                        
                         <h3 class="card__title">Ольга Репина</h3>
                         <p class="card__subtitle">Frontend Developer</p>
                         <div class="social">
@@ -202,7 +308,27 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./images/team/team3.jpg" alt="Николай Тарасов">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/team3.jpg 1x, 
+                                    ./images/team/team3-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="
+                                    ./images/team/team3-tab.jpg 1x, 
+                                    ./images/team/team3-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source
+                                srcset="
+                                    ./images/team/team3-mob.jpg 1x, 
+                                    ./images/team/team3-mob-2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img 
+                            src="./images/team/team3.jpg" 
+                            alt="Николай Тарасов">
+                        </picture>
+                        
                         <h3 class="card__title">Николай Тарасов</h3>
                         <p class="card__subtitle">Marketing</p>
                         <div class="social">
@@ -239,7 +365,26 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./images/team/team4.jpg" alt="Михаил Ермаков" >
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team/team4.jpg 1x, 
+                                    ./images/team/team4-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="
+                                    ./images/team/team4-tab.jpg 1x, 
+                                    ./images/team/team4-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source
+                                srcset="
+                                    ./images/team/team4-mob.jpg 1x, 
+                                    ./images/team/team4-mob-2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img 
+                                src="./images/team/team4.jpg" 
+                                alt="Михаил Ермаков">
+                        </picture>
                         <h3 class="card__title">Михаил Ермаков</h3>
                         <p class="card__subtitle">UI Designer</p>
                         <div class="social">
