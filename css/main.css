@@ -185,7 +185,9 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: -5px;
 }
 
 .header {
@@ -199,7 +201,7 @@ img {
 }
 
 .menu-list {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 .menu-list .active {
@@ -208,6 +210,13 @@ img {
 
 .menu-list__contacts {
   color: var(--prymary-text-color);
+}
+
+.menu-buttom {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  right: 15px;
 }
 
 .header-logo {

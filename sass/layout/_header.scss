@@ -1,7 +1,9 @@
 .header-container {
   display: flex;
   align-items: center;
-  padding: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: -5px;
 }
 
 .header {
@@ -15,7 +17,7 @@
 }
 
 .menu-list {
-  display: flex;
+  display: none;
   margin-left: auto;
   .active {
     color: var(--accent-color);
@@ -24,6 +26,13 @@
 
 .menu-list__contacts {
   color: var(--prymary-text-color);
+}
+
+.menu-buttom {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  right: 15px;
 }
 
 .header-logo {
