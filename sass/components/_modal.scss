@@ -1,7 +1,8 @@
 
 .modal {
   padding: 40px;
-  width: 528px;
+  width: 450px;
+  height: 80vh;
   min-height: 600px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -128,8 +129,8 @@
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 11px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;

@@ -21,19 +21,13 @@
         <div class="container header-container">           
             <nav class="menu">
                 <a class="header-logo link" href="/"><span class="logo-title">Web</span>Studio</a>
-                <button type="button" class="menu-buttom">
-                    <svg class="menu-list__icon" width="24" height="16">
-                        <use href="./images/icons.svg#icon-menu_24px"></use>
-                    </svg>
-                </div>
                 <ul class="list menu-list">
                     <li class="menu-list__item"><a class="link menu-list__link active" href="">Студия</a></li>
                     <li class="menu-list__item"><a class="link menu-list__link" href="./portfolio/portfolio.html">Портфолио</a></li>
                     <li class="menu-list__item"><a class="link menu-list__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            
-            <ul class="menu-list list">
+            <ul class="menu-list menu-list--right list">
                 <li>
                     <a class="link menu-list__contacts" href="mailto:info@devstudio.com">
                         <svg class="menu-list__icon" width="16" height="12">
@@ -49,6 +43,51 @@
                     </a>
                 </li>
             </ul>
+
+            <button type="button" class="btn-menu-open">
+                <svg class="btn-menu-open-icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button type="button" class="btn-menu-close">
+                            <svg class="btn-menu-close-icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="">Студия</a></li>
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="./portfolio/portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-buttom">
+                        <ul class="mob-menu-list-contacts list">
+                            <li>
+                                <a class="link mob-menu-list__contacts--tel" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link mob-menu-list__contacts--mail" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list social-item">
+                            <li><a href="#" class="social-link">Instagram</a></li>
+                            <li><a href="#" class="social-link">Twitter</a></li>
+                            <li><a href="#" class="social-link">Facebook</a></li>
+                            <li><a href="#" class="social-link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>  
     </header>
     <!--main content-->
@@ -575,11 +614,12 @@
                     </span>
                         Соглашаюсь с рассылкой и принимаю <a href="#" class="polyci-doc">Условия договора</a>
                     </label>
-                    <button type="submit" class="online-btn modal-btn">Отправить</button>
+                    <button type="submit" class="button online-btn modal-btn">Отправить</button>
                 </div>
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
