@@ -17,36 +17,80 @@
 <body>
 
     <!-- Шапка страницы -->
-<header class="header">
-    <div class="container header-container">
-        <nav class="menu">
-            <a class="header-logo link" href="/"><span class="logo-title">Web</span>Studio</a>
-            <ul class="list menu-list">
-                <li class="menu-list__item"><a class="link menu-list__link " href="../index.html">Студия</a></li>
-                <li class="menu-list__item"><a class="link menu-list__link active"
-                        href="./portfolio/portfolio.html">Портфолио</a></li>
-                <li class="menu-list__item"><a class="link menu-list__link" href="">Контакты</a></li>
+    <header class="header">
+        <div class="header-container">
+            <a class="header-logo link" href="#"><span class="logo-title">Web</span>Studio</a>
+            <nav class="menu">
+                <ul class="list menu-list">
+                    <li class="menu-list__item"><a class="link menu-list__link " href="../index.html">Студия</a></li>
+                    <li class="menu-list__item"><a class="link menu-list__link active"
+                            href="./portfolio/portfolio.html">Портфолио</a></li>
+                    <li class="menu-list__item"><a class="link menu-list__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="menu-list--right list">
+                <li class="menu-item">
+                    <a class="link menu-list__contacts" href="mailto:info@devstudio.com">
+                        <svg class="menu-list__icon" width="16" height="12">
+                            <use href="../images/icons.svg#icon-envelope-hover"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="link menu-list__contacts" href="tel:+380961111111">
+                        <svg class="menu-list__icon" width="10" height="16">
+                            <use href="../images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
             </ul>
-        </nav>
-
-        <ul class="menu-list list">
-            <li>
-                <a class="link menu-list__contacts" href="mailto:info@devstudio.com">
-                    <svg class="menu-list__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope-hover"></use>
-                    </svg>info@devstudio.com
-                </a>
-            </li>
-            <li>
-                <a class="link menu-list__contacts" href="tel:+380961111111">
-                    <svg class="menu-list__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
+    
+            <button type="button" class="btn-menu-open">
+                <svg class="btn-menu-open-icon" width="24" height="16">
+                    <use href="../images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+    
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button type="button" class="btn-menu-close">
+                            <svg class="btn-menu-close-icon" width="40" height="40">
+                                <use href="../images/icons.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="">Студия</a></li>
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link"
+                                    href="./portfolio/portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-buttom">
+                        <ul class="mob-menu-list-contacts list">
+                            <li>
+                                <a class="link mob-menu-list__contacts--tel" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link mob-menu-list__contacts--mail" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list social-item">
+                            <li><a href="#" class="social-link">Instagram</a></li>
+                            <li><a href="#" class="social-link">Twitter</a></li>
+                            <li><a href="#" class="social-link">Facebook</a></li>
+                            <li><a href="#" class="social-link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
     <!--main content-->
@@ -72,7 +116,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img1-tab.jpg 1x, 
-                                    ../images/portfoliio/img1-2x.jpg 2x"
+                                    ../images/portfoliio/img1-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -103,7 +147,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img2-tab.jpg 1x, 
-                                    ../images/portfoliio/img2-2x.jpg 2x"
+                                    ../images/portfoliio/img2-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -134,7 +178,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img3-tab.jpg 1x, 
-                                    ../images/portfoliio/img3-2x.jpg 2x"
+                                    ../images/portfoliio/img3-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -165,7 +209,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img4-tab.jpg 1x, 
-                                    ../images/portfoliio/img4-2x.jpg 2x"
+                                    ../images/portfoliio/img4-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -196,7 +240,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img5-tab.jpg 1x, 
-                                    ../images/portfoliio/img5-2x.jpg 2x"
+                                    ../images/portfoliio/img5-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -227,7 +271,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img6-tab.jpg 1x, 
-                                    ../images/portfoliio/img6-2x.jpg 2x"
+                                    ../images/portfoliio/img6-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -258,7 +302,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img7-tab.jpg 1x, 
-                                    ../images/portfoliio/img7-2x.jpg 2x"
+                                    ../images/portfoliio/img7-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -289,7 +333,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img8-tab.jpg 1x, 
-                                    ../images/portfoliio/img8-2x.jpg 2x"
+                                    ../images/portfoliio/img8-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -320,7 +364,7 @@
                                 <source
                                 srcset="
                                     ../images/portfoliio/img9-tab.jpg 1x, 
-                                    ../images/portfoliio/img9-2x.jpg 2x"
+                                    ../images/portfoliio/img9-tab-2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <source
                                 srcset="
@@ -344,7 +388,7 @@
             </div>
         </section>   
     </main>
-    <footer>
+    <!-- <footer>
         <section class="section footer">
             <div class="container info">
                 <div>
@@ -409,8 +453,8 @@
             </div>
             </div>
         </section>
-    </footer>
-
+    </footer> -->
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>
