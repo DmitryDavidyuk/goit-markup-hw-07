@@ -1,5 +1,6 @@
 .team--color {
   background-color: #f5f4fa;
+  padding-bottom: 30px;
 }
 
 .team {
@@ -12,6 +13,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    
   }
 }
 

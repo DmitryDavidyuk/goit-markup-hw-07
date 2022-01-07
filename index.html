@@ -12,13 +12,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- Шапка страницы -->
     <header class="header">
-        <div class="header-container">
+        <div class="header-container container">
             <a class="header-logo link" href="/"><span class="logo-title">Web</span>Studio</a>
             <nav class="menu">               
                 <ul class="list menu-list">
@@ -43,18 +42,17 @@
                     </a>
                 </li>
             </ul>
-
             <button type="button" class="btn-menu-open">
                 <svg class="btn-menu-open-icon" width="24" height="16">
                     <use href="./images/icons.svg#icon-menu_24px"></use>
                 </svg>
             </button>
-
+        </div>
             <div class="mob-menu is-hidden">
                 <div class="container">
                     <div class="mob-menu-top">
                         <button type="button" class="btn-menu-close">
-                            <svg class="btn-menu-close-icon" width="40" height="40">
+                            <svg class="btn-menu-close-icon" width="25" height="25">
                                 <use href="./images/icons.svg#icon-close-black"></use>
                             </svg>
                         </button>
@@ -87,8 +85,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>  
+            </div>  
     </header>
     <!--main content-->
     <main>
@@ -500,49 +497,51 @@
             </div>
         </section>
     </main>
-    <!-- <footer>
+    <footer>
         <section class="section footer">
             <div class="container info">
-                <div>
-                    <a class="footer--logo link" href="/"><span class="logo-title">Web</span>Studio</a>
-                    <address class="footer__info">г. Киев, пр-т Леси Украинки, 26</address>
-                    <ul class="list">
-                        <li><a class="link footer__mail" href=",ilto:info@example.com">info@example.com</a></li>
-                        <li><a class="link footer__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                    </ul>
-                </div>
-                <div class="subscribe">
-                    <p class="subscribe__title">присоединяйтесь</p>
-                    <ul class="list subscribe__item">
-                        <li class="social__item">
-                            <a href="" class="social__link--footer">
-                                <svg class="social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="" class="social__link--footer">
-                                <svg class="social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter "></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="" class="social__link--footer">
-                                <svg class="social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="" class="social__link--footer">
-                                <svg class="social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="info--width">
+                    <div class="footer-item">
+                        <a class="footer--logo link" href="/"><span class="logo-title">Web</span>Studio</a>
+                        <address class="footer__info">г. Киев, пр-т Леси Украинки, 26</address>
+                        <ul class="list">
+                            <li><a class="link footer__mail" href=",ilto:info@example.com">info@example.com</a></li>
+                            <li><a class="link footer__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <p class="subscribe__title">присоединяйтесь</p>
+                        <ul class="list subscribe__item">
+                            <li class="social__item">
+                                <a href="" class="social__link--footer">
+                                    <svg class="social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" class="social__link--footer">
+                                    <svg class="social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter "></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" class="social__link--footer">
+                                    <svg class="social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="" class="social__link--footer">
+                                    <svg class="social__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contact-wrap">
                     <section class="online">
@@ -554,18 +553,17 @@
                                 <input id="email" type="email" class="online__input" name="email" placeholder="E-mail" />
                             </div>
                             <button type="submit" class="button">
-                                    Отправить<svg class="button__icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-send"></use>
-                                    </svg>
+                                Отправить<svg class="button__icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
                             </button>
-                            
-                            </form>
-                        </section>
-                    </div>
+                        </form>
+                    </section>
                 </div>
             </div>
+            </div>
         </section>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden"data-modal >
         <div class="modal">
             <button type="button" class="modal-close"data-modal-close>
